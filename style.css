@@ -68,7 +68,7 @@ nav ul li a:hover::after{
 }
 
 /*-----portfolio------*/
-#team-projects {
+.projects {
     padding: 80px 0;
     color: #abaaab;
     text-align: left;
