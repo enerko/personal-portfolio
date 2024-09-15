@@ -185,3 +185,29 @@ nav ul li a:hover::after{
 }
 
 
+/*-----project page------*/
+.project-title,
+.project {
+    margin: 0 auto;
+    max-width: 800px; 
+    padding: 20px;
+}
+
+.project-title img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0; 
+}
+
+.project h1, .project h2 {
+    margin-bottom: 15px; 
+}
+
+.project p {
+    margin-bottom: 20px; 
+    font-size: 18px;
+    line-height: 1.6; 
+}
+
+
