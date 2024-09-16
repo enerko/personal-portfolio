@@ -187,7 +187,7 @@ nav ul li a:hover::after{
 }
 
 .project img {
-    max-width: 100%;
+    max-width: 1000px;
     height: auto;
     display: block;
     margin: 20px 0; 
@@ -203,12 +203,8 @@ nav ul li a:hover::after{
     line-height: 1.6; 
 }
 
-.info {
-    margin-bottom: 20px
-}
-
 .info p {
-    margin-bottom: 5px; 
+    margin-bottom: 2px; 
 }
 
 
