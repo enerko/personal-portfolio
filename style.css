@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background: #000000;
+    background: #1d1d1d;
     color: #fff;
 }
 #header{
@@ -14,6 +14,7 @@ body{
 }
 .container{
     padding: 10px 10%;
+    margin-bottom: 40px;
 }
 
 nav{
@@ -113,7 +114,6 @@ nav ul li a:hover::after{
 
 .text-container h3 {
     font-size: 18px;
-    margin-bottom: 10px; /* Add space below the title */
 }
 
 .text-container p {
@@ -201,6 +201,10 @@ nav ul li a:hover::after{
     margin-bottom: 25px; 
     font-size: 18px;
     line-height: 1.6; 
+}
+
+.info p {
+    margin-bottom: 10px; 
 }
 
 
