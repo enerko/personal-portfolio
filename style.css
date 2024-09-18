@@ -201,15 +201,12 @@ nav ul li a:hover::after{
     margin-bottom: 25px; 
     font-size: 18px;
     line-height: 1.6; 
-}
-
-.info p {
-    margin-bottom: 2px; 
+    font-weight: lighter;
 }
 
 .responsive-video {
     width: 100%;
-    max-width: 640px; 
+    max-width: 1000; 
     height: auto;
     display: block; 
     margin: 0 auto; 
