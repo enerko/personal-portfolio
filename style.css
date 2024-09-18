@@ -195,13 +195,13 @@ nav ul li a:hover::after{
 
 .project h1, .project h2 {
     margin-bottom: 10px; 
+    font-weight: bold;
 }
 
 .project p {
     margin-bottom: 25px; 
     font-size: 18px;
     line-height: 1.6; 
-    font-weight: lighter;
 }
 
 .responsive-video {
