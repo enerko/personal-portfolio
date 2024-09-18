@@ -180,7 +180,7 @@ nav ul li a:hover::after{
 
 
 /*-----project page------*/
-.project, .info {
+.project{
     margin: 0 auto;
     max-width: 1000px; 
     padding: 20px;
@@ -196,6 +196,7 @@ nav ul li a:hover::after{
 .project h1, .project h2 {
     margin-bottom: 10px; 
     font-weight: bold;
+    font-size: 30px;
 }
 
 .project p {
@@ -205,7 +206,8 @@ nav ul li a:hover::after{
 }
 
 .responsive-video {
-    width: 1000px; 
+    width: 100%;
+    max-width: 1000; 
     height: auto;
     display: block; 
     margin: 0 auto; 
