@@ -207,4 +207,11 @@ nav ul li a:hover::after{
     margin-bottom: 2px; 
 }
 
+.responsive-video {
+    width: 100%;
+    max-width: 640px; 
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+}
 
