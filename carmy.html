@@ -34,13 +34,19 @@
             movement code. The wall walking mechanic was definitely a challenging one, as the game has to detect when the player can move in the direction
             the input is in. 
         </p>
-        <h2>Movement Mechanic</h2>
-        <p> 
-            There were few challenging parts to this movmenent mechanic
-            1. Detect if the player can proceed in the input direction
-            2. Rotate on convex corners
-            3. Rotate on concave corners
-        </p>
+        <h2>Movement</h2>
+        <div class="video-container"></div>
+            <video width="1000" height=auto controls autoplay loop muted>
+                <source src="videos/carmy-movement.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <p>There were a few challenging parts to this movement:</p>
+        <ol>
+            <li>Detect if the player can proceed in the input direction</li>
+            <li>Rotate on convex corners</li>
+            <li>Rotate on concave corners</li>
+        </ol>
         <p>
             I would like to note that the input stays consistent to the screen, no matter the character's orientation. Pressing left would make the player 
             go left, regardless of whether the player is facing upside down or upright, if the character's feet are grounded. To deal with the first problem,
@@ -50,12 +56,11 @@
         </p>
         <p>
             To deal with rotation, I used 2 downward raycasts, one at the front of the body, and one at the back of the body. Using the normals obtained from 
-            the 2 rays, I can calculate the average normal and average intersection position, to which we can apply on the character. To avoid a sudden rotation,
-            I used Quaternion.RotateTowards and restrict the maximum rotation allowed on each frame. The inwardDirectionLeft and inwardDirectionRight are used
-            to rotate the downward rays towards the center, to deal with convex corners. If the 2 rays were perpendicular to the ground, one ray would never detect
-            the vertical wall as there is no gravity acting on the character. To combat this, we add a little rotation to the rays to face the center. One problem 
-            that remains is that there is an infinite number of normals at corners, causing the character to jitter at corners. To prevent this issue, I added a 
-            minimum threshold angle that angleDifference must overcome in order for the character to rotate. 
+            the 2 rays, I can calculate the average normal and average intersection position, to which we can apply on the character. The inwardDirectionLeft 
+            and inwardDirectionRight are used to rotate the downward rays towards the center, to deal with convex corners. If the 2 rays were perpendicular to 
+            the ground, one ray would never detect the vertical wall as there is no gravity acting on the character. To combat this, we add a little rotation 
+            to the rays to face the center. One problem that remains is that there is an infinite number of normals at corners, causing the character to jitter 
+            at corners. To prevent this issue, I added a minimum threshold angle that angleDifference must overcome in order for the character to rotate. 
         </p>
         <p>
             For concave corners, we need a way to detect walls that are infront of the character, and rotate the character accordiongly. Note that we only want to
